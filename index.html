@@ -53,7 +53,7 @@
 
       <div class="form-block w-form">
 
-        <form id="email-form" name="webflow-form" data-name="Email Form" method="post" class="form-2" data-wf-page-id="6679a09b4ee2a9b3f5dfb274" data-wf-element-id="538f9bd6-8ca5-4ea7-b7d3-6a7d798b371d" netlify>
+        <form id="contacting-form" name="webflow-form" data-name="Email Form" method="post" class="form-2" data-wf-page-id="6679a09b4ee2a9b3f5dfb274" data-wf-element-id="538f9bd6-8ca5-4ea7-b7d3-6a7d798b371d" netlify>
           <input class="input w-input" maxlength="256" name="name" data-name="name" placeholder="Your name" type="text" id="name-2">
           <input class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" type="email" id="Email-3" required="">
           <input type="submit" data-wait="Please wait..." class="button form-button w-button" value="Subscribe">
@@ -83,16 +83,16 @@
       <div class="form-block w-form" data-wow-delay="0.6s">
           <form name="contact" method="post" id="contact-form" class="form-2" netlify>
                 <div class="col-md-6 col-sm-6">
-                      <input type="text" class="input w-input" name="name" placeholder="Name">
+                      <input type="text" maxlength="256" class="input w-input" name="name" placeholder="Name">
                 </div>
                 <div class="col-md-6 col-sm-6">
-                      <input type="email" class="input w-input" name="email" placeholder="Email">
+                      <input type="email" maxlength="256" class="input w-input" name="email" placeholder="Email">
                 </div>
                 <div class="col-md-12 col-sm-12">
-                      <textarea class="input w-input" rows="5" name="message" placeholder="Message"></textarea>
+                      <textarea class="input w-input" maxlength="256" rows="5" name="message" placeholder="Message"></textarea>
                 </div>
                 <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                      <button id="submit" type="submit" class="button form-button w-button" value="send-mail" name="submit">Send Message</button>
+                      <button id="submit" type="submit" value="send-mail" name="submit">Send Message</button>
                 </div>
           </form>
       </div>
