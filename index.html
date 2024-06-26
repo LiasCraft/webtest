@@ -48,15 +48,15 @@
     <div data-w-id="8cf47482-19f1-1f52-25ba-910a60bc91de" style="-webkit-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="wrap">
       <h2>Get updates from Richard</h2>
       <p>New course alerts, discounts and free lessons</p>
-      <div class="main-forms">
+      <div class="form-block w-form">
         <form id="email-form" name="email-form" data-name="Email Form" method="post" class="form-2" data-wf-page-id="6679a09b4ee2a9b3f5dfb274" data-wf-element-id="538f9bd6-8ca5-4ea7-b7d3-6a7d798b371d" netlify>
           <input class="input w-input" maxlength="256" name="name" data-name="name" placeholder="Your name" type="text" id="name-2"><input class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" type="email" id="Email-3" required=""><input type="submit" data-wait="Please wait..." class="button form-button w-button" value="Subscribe"></form>
-<!--         <div class="w-form-done">
+        <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
         </div>
         <div class="w-form-fail">
           <div>Oops! Something went wrong while submitting the form.</div>
-        </div> -->
+        </div>
       </div>
     </div>
     <div class="wrapper"></div>
@@ -75,27 +75,15 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6679a09b4ee2a9b3f5dfb233" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-<!--   <script>
-    // Функция для переименования классов
-    function renameClasses() {
-        var wFormElements = document.querySelectorAll('.w-form');
-        wFormElements.forEach(function(element) {
-            element.classList.remove('w-form');
-            element.classList.add('lite-form');
-        });
-    }
-    // Функция для добавления атрибута netlify ко всем тегам form
-    function addNetlifyAttribute() {
-        var formElements = document.querySelectorAll('form');
-        formElements.forEach(function(form) {
-            form.setAttribute('netlify', 'true');
-        });
-    }
-    // Выполнение функций при загрузке страницы
-    document.addEventListener('DOMContentLoaded', function() {
-        renameClasses();
-        addNetlifyAttribute();
+<script>
+    // Получаем все элементы с классом 'w-form'
+    var wFormElements = document.querySelectorAll('.w-form');
+
+    // Перебираем каждый элемент и заменяем класс 'w-form' на 'lite-form'
+    wFormElements.forEach(function(element) {
+        element.classList.remove('w-form');
+        element.classList.add('lite-form');
     });
-</script> -->
+</script>
 </body>
 </html>
